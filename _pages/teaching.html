@@ -7,6 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
 ## Graduate Courses
 - **ANLY-560** | Time Series Analysis                                                | **Spring 2022** 
   _Prof. Purna Gamage_
