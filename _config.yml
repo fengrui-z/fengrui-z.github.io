@@ -13,7 +13,7 @@ title_separator          : "-"
 name                     : &name "Fengrui Zhang"
 description              : &description "personal description"
 url                      : "https://fengrui-z.github.io"
-baseurl                  : "https://fengrui-z.github.io/blog"
+baseurl                  : 
 repository               : "fengrui-z.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -23,8 +23,8 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Fengrui Zhang"
-  pronouns         : # example: "he/him"  
-  bio              : "Short biography for the left-hand sidebar"
+  pronouns         : "he/him"  
+  bio              : # "Short biography for the left-hand sidebar"
   location         : "New Brunswick,NJ"
   employer         : # "Red Brick University"
   uri              : # URL
