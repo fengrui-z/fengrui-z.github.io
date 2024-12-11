@@ -8,7 +8,18 @@ date: 2014-01-01
 location: "City, Country"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+## Graduate Courses
+- **ANLY-560** | Time Series Analysis                                                | **Spring 2022** 
+  _Prof. Purna Gamage_
+- **ANLY-677** | Image Mining and Computer Vision                                    | **Summer 2022**  
+  _Prof. Nakul Padalkar
+- **ANLY-591** | Reinforcement Learning                                              | **Spring 2023**  
+  _Prof. James Hickman_
+---
+
+## Undergraduate Courses
+- **OPIM-257** | Develop/Managing Data Bases                                         | **Fall 2022**  
+  _Prof. Emisa Nategh_
 
 Heading 1
 ======
