@@ -1,13 +1,12 @@
 ---
-title: "Teaching experience 1"
+title: "Teaching Assistant"
 collection: teaching
-type: "Undergraduate course"
+type: ""
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "Georgetown University"
+date: 2022-01 to 2023-05
+location: "Washington D.C"
 ---
-# Georgetown University
 ## Graduate Courses
 - **ANLY-560** | Time Series Analysis                                                | **Spring 2022** <br>
   _Prof. Purna Gamage_
