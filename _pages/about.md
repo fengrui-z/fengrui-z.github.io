@@ -17,5 +17,5 @@ I lived in Beijing for 18 years, then life have taken me to cities like Hefei, W
 
 ## NEWS
 
-- 2024-12 One paper accepted by ICASSP 2025
-- 2024-2 One Paper accepted by CVPR 2024
+- 2024-12 One paper of Graph Causal Learning accepted by [ICASSP 2025](https://2025.ieeeicassp.org/)
+- 2024-02 One Paper of Federated Learning accepted by [CVPR 2024](https://ieeexplore.ieee.org/document/10656892/citations?tabFilter=papers#citations)
