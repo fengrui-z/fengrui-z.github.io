@@ -13,7 +13,7 @@ title_separator          : "-"
 name                     : &name "Fengrui Zhang"
 description              : &description "personal description"
 url                      : "https://fengrui-z.github.io"
-baseurl                  : 
+baseurl                  : "/fengrui-z.github.io"
 repository               : "fengrui-z.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
