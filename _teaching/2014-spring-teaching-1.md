@@ -4,7 +4,7 @@ collection: teaching
 type: ""
 permalink: /teaching/Georgetown-teaching
 venue: "Georgetown University"
-duration: "2022-01-20 to 2023-05-20"
+date: "2022-01"
 location: "Washington D.C"
 ---
 ## Graduate Courses
@@ -14,7 +14,6 @@ location: "Washington D.C"
   _Prof. Nakul Padalkar_
 - **ANLY-591** | Reinforcement Learning                                              | **Spring 2023** <br> 
   _Prof. James Hickman_
----
 
 ## Undergraduate Courses
 - **OPIM-257** | Develop/Managing Data Bases                                         | **Fall 2022**  <br>
