@@ -4,7 +4,7 @@ collection: teaching
 type: ""
 permalink: /teaching/Georgetown-teaching
 venue: "Georgetown University"
-date: 2022-01 to 2023-05
+date: "2022-01 to 2023-05"
 location: "Washington D.C"
 ---
 ## Graduate Courses
