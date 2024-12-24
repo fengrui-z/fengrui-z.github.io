@@ -25,7 +25,7 @@ author:
   name             : "Fengrui Zhang"
   pronouns         : "he/him"  
   bio              : # "Short biography for the left-hand sidebar"
-  location         : "New Brunswick,NJ"
+  location         : "North Brunswick,NJ"
   employer         : # "Red Brick University"
   uri              : # URL
   email            : "drake.zfr@gmail.com" 
@@ -56,7 +56,7 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # Username
+  instagram        : "freyr_ray"
   lastfm           : # Username
   linkedin         : # Username
   mastodon         : # URL
@@ -264,23 +264,23 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+  # # _portfolio
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comment: true
+  # # _talks
+  # - scope:
+  #     path: ""
+  #     type: talks
+  #   values:
+  #     layout: talk
+  #     author_profile: true
+  #     share: true
 
 
 # Sass/SCSS
