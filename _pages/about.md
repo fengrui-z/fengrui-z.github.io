@@ -17,6 +17,6 @@ I lived in Beijing for 18 years, then life have taken me to cities like Hefei, W
 
 ## NEWS
 
-- 2024-12 One paper about Graph Causal Learning accepted by [ICASSP 2025](https://2025.ieeeicassp.org/), it will be available soon.
+- 2024-12 One paper about Graph Causal Learning accepted by [ICASSP 2025](https://2025.ieeeicassp.org/), it will appeared soon.[Repo](https://github.com/fengrui-z/ECAL)
 - 2024-05 An R-package of Causal Inference in Clinical Trials based on [Hu. et al.](https://onlinelibrary.wiley.com/doi/10.1002/sim.9548) is available on [CRAN](https://cran.r-project.org/web/packages/riAFTBART/)
-- 2024-02 One Paper about Federated Learning accepted by [CVPR 2024](https://cvpr.thecvf.com/Conferences/2024), [pdf](https://ieeexplore.ieee.org/document/10656892/citations?tabFilter=papers#citations)
+- 2024-02 One Paper about Federated Learning accepted by [CVPR 2024](https://cvpr.thecvf.com/Conferences/2024), [pdf](https://ieeexplore.ieee.org/document/10656892/citations?tabFilter=papers#citations),[Repo](https://github.com/fengrui-z/FedBary)
