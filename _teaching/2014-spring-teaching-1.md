@@ -1,6 +1,6 @@
 ---
 title: "Teaching Assistant"
-collection: teaching
+collection: Assistantship
 type: 
 permalink: 
 venue: "Georgetown University,DSAN & McDonough Business School"
