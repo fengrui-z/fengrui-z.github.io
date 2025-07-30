@@ -8,7 +8,9 @@ redirect_from:
 ---
 
 ## About me
-I am **Fengrui Zhang** (张峰瑞), an incoming Ph.D student in [CS@NJU](https://cs.nju.edu.cn/cs_en/). Previously, I obtained an M.S. in [Data Science and Analytics](https://analytics.georgetown.edu/) from [Georgetown University](https://georgetown.edu/) (2021–2023). I received a B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn/), [School of Management](https://en.business.ustc.edu.cn/main.htm)(2017–2021), supervised by [Xiao Han](https://bs.ustc.edu.cn/english/profile-652.html).
+I am **Fengrui Zhang** (张峰瑞), an incoming Ph.D student in [CS@NJU](https://cs.nju.edu.cn/cs_en/). 
+
+Previously, I obtained an M.S. in [Data Science and Analytics](https://analytics.georgetown.edu/) from [Georgetown University](https://georgetown.edu/) (2021–2023), I received a B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn/), [School of Management](https://en.business.ustc.edu.cn/main.htm)(2017–2021), supervised by [Xiao Han](https://bs.ustc.edu.cn/english/profile-652.html).
 
 I lived in Beijing for 18 years, then life have taken me to cities like Hefei, Washington D.C., New York, and New Brunswick, enriching my outlook and adaptability.
 
