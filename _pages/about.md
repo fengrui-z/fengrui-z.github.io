@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 ## About me
-I am **Fengrui Zhang** (张峰瑞), a first year Ph.D student @ [School of Computer Science at Nanjing University](https://cs.nju.edu.cn/cs_en/), advised by Dr. [Xiaoliang Wang](https://cs.nju.edu.cn/wangxiaoliang/). 
+I am **Fengrui Zhang** (张峰瑞), a first year Ph.D student @ [School of Computer Science at Nanjing University](https://cs.nju.edu.cn/cs_en/), advised by Prof. [Xiaoliang Wang](https://cs.nju.edu.cn/wangxiaoliang/). 
 
 Previously, I obtained an M.S. in [Data Science and Analytics](https://analytics.georgetown.edu/) from [Georgetown University](https://georgetown.edu/) (2021–2023), I received a B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn/), [School of Management](https://en.business.ustc.edu.cn/main.htm)(2017–2021), supervised by [Xiao Han](https://bs.ustc.edu.cn/english/profile-652.html).
 
