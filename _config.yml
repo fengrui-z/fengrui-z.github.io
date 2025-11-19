@@ -1,10 +1,10 @@
 ###########
 # site.title
 
-title: jekyllBear
-description: a minimal, text focused blog theme
+title: Greetings!
+description: Here is Fengrui Zhang (张峰瑞), a $1$ year CS Ph.D Student at [Nanjing University](https://cs.nju.edu.cn/)
 # baseurl: "/jekyllBear" # the subpath of your site, e.g. /blog/
-url: "https://knhash.in/jekyllBear" # the base hostname & protocol for your site
+url: "https://fengrui-z.github.io" # the base hostname & protocol for your site
 # host: 0.0.0.0
 
 
@@ -46,7 +46,7 @@ defaults:
 
 # baseurl: ""
 permalink: /blog/:slug
-timezone: America/New_York
+timezone: Asia/China
 future: false
 
 exclude:
