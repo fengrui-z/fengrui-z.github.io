@@ -1,77 +1,159 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# jekyllBear
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+## An easy to use, minimal, text focused Jekyll theme
 
-# Getting Started
+[Bear Blog](https://bearblog.dev/) is *"a blogging platform where words matter most"*. 
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+This is a port of it's theme to Jekyll, with some tweaks. So you can use GitHub Pages to host your blog while getting the same awesome Bear Blog feels.
 
-See more info at https://academicpages.github.io/
+**Stop worrying about the style, focus on your writing.**
 
-## Running locally
+- Looks great on *any* device
+- Tiny, optimized, and awesome pages, with [a 100 on PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Fknhash.in%2FjekyllBear%2F)
+- No trackers, ads, or scripts, *did I mention minimal already?*
+- Auto light and dark themes
+- Tag support, to filter blog pages
+- Quick, *15 minute* setup
+- Gallery view for your images
+- Code highlighting
+- **Life in Weeks visualization** - Interactive timeline of your life events
+- **IBM Plex Mono typography** - Consistent monospace font across all elements
+- **Pine Forest color palette** - Cool, nature-inspired greens with automatic dark mode
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+## Screenshots
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+### Home
+![Home](https://raw.githubusercontent.com/Knhash/jekyllBear/master/assets/images/JBHome.png?raw=true "Home") 
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+### Blog
+![Blog](https://raw.githubusercontent.com/Knhash/jekyllBear/master/assets/images/JBBlog.png?raw=true "Blog") 
 
-## Using Docker
+### Long Form
+![LongForm](https://raw.githubusercontent.com/Knhash/jekyllBear/master/assets/images/JBLongForm.png?raw=true "LongForm") 
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+### Poetry
+![Poetry](https://raw.githubusercontent.com/Knhash/jekyllBear/master/assets/images/JBPoetry.png?raw=true "Poetry")
 
-Start by build the container:
+### Life
+![Life](https://raw.githubusercontent.com/Knhash/jekyllBear/master/assets/images/JBLife.png?raw=true "Life")
 
-```bash
-docker build -t jekyll-site .
+## Installation
+
+Add this line to your Jekyll site's `Gemfile`:
+
+```ruby
+gem "jekyll-bear-theme"
 ```
 
-Next, run the container:
-```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: jekyll-bear-theme
 ```
 
-# Maintenance
+And then execute:
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+    $ bundle
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+Or install it yourself as:
 
-## Bugfixes and enhancements
+    $ gem install jekyll-bear-theme
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+### Design Philosophy
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+jekyllBear now features a **monospace-first design** with IBM Plex Mono typography, creating a technical yet natural aesthetic. The pine forest color palette provides visual tranquility while maintaining excellent readability across light and dark modes, evoking the calm and focus of a peaceful woodland environment.
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+### Customization
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+The theme's CSS is now highly modular and customizable:
+
+- **Typography**: Modify `--font-main`, `--font-secondary`, and `--font-monospace` variables
+- **Spacing**: Use the standardized spacing scale for consistent layouts
+- **Colors**: All theme colors are centralized in CSS custom properties for easy customization
+- **Pine Forest Palette**: Cool greens ranging from light pine mist to deep forest shadows
+- **Glow Effects**: Configurable glow colors via `--glow-color-light` and `--glow-color-medium`
+- **Layout**: Responsive design with mobile-first approach
+
+## Usage
+
+### Basic Setup
+
+Create a new repository for your website (if necessary)
+```jekyll
+jekyll new my_website
+```
+
+Copy over the following content from this repository, to serve as a base setup
+
+```
+/posts      -> Where you will write your posts
+/_my_tags   -> Where you will define your tags, if you need to add anything new
+blog.md     -> Homepage for your blog
+index.md    -> Website homepage
+life.md     -> Life in weeks visualization page (optional)
+404.html    -> When a page is not available
+```
+
+You will need to update `_config.yml`. Copy over the lines after
+
+```
+#########################
+# more settings
+```
+in the `_config.yml` present in this repository to your website repository `_config.yml`.
+
+Any new links you want to add to the navbar goes here, towards the end.
+This also defines the bits about tags and filtering.
+
+### Life in Weeks Feature
+
+To use the new Life in Weeks visualization:
+
+1. **Create your life data**: Copy `_data/life-in-weeks.yml` and customize it with your own life events
+2. **Add the life page**: Copy `life.md` and update the `start_date` and `end_year` parameters
+3. **Configure navigation**: The "Life" link will automatically appear in your navigation
+
+#### Life Data Format
+
+Events in `_data/life-in-weeks.yml` follow this structure:
+
+```yaml
+'YYYY-MM-DD':
+  - name: "Event name"
+    desc: "Optional description shown in tooltip"
+    category: "category_name"
+    link: "https://optional-link.com"
+    tags: ["tag1", "tag2"]
+```
+
+### Blog Post Types
+
+There should be 3 kinds of blog posts in the posts folder, an example of each type you can use:
+
+- long-form reading
+- poetry
+- gallery view
+
+Use them as templates for your front matter.
+
+>To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`.
+
+See `life.md`, `_layouts/life-in-weeks.html`, and `assets/life-carousel.js` for implementation details.
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/knhash/jekyllBear. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `jekyllBear.gemspec` accordingly.
+
+## License
+
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
