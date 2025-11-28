@@ -56,7 +56,6 @@ exclude:
 exclude: [vendor]
 
 Blog: /blog
-Play: /play
 
 # Add general links to site pages here
 links:
