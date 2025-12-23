@@ -2,7 +2,7 @@
 # site.title
 
 title: Fengrui's Page
-description: Here is Fengrui Zhang (张峰瑞), a $1$ year CS Ph.D Student at [Nanjing University](https://cs.nju.edu.cn/)
+description: Here is Fengrui Zhang (张峰瑞), a first year CS Ph.D Student at [Nanjing University](https://cs.nju.edu.cn/)
 # baseurl: "/jekyllBear" # the subpath of your site, e.g. /blog/
 url: "https://fengrui-z.github.io" # the base hostname & protocol for your site
 # host: 0.0.0.0
