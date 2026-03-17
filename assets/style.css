@@ -5,7 +5,7 @@
    FONTS & IMPORTS
    ============================================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Fira+Code:wght@300..700&display=swap');
 
 /* =============================================================================
    CSS CUSTOM PROPERTIES (VARIABLES)
@@ -16,67 +16,77 @@
     --width: 720px;
     
     /* Typography */
-    --font-main: 'IBM Plex Mono', monospace;
-    --font-secondary: 'IBM Plex Mono', monospace;
-    --font-monospace: 'IBM Plex Mono', monospace;
-    --font-scale: 0.9em;
+    --font-main: 'Outfit', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+    --font-monospace: 'Fira Code', monospace;
+    --font-scale: 1em;
     
     /* Spacing */
-    --spacing-xs: 5px;
-    --spacing-sm: 10px;
-    --spacing-md: 20px;
-    --spacing-lg: 40px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 24px;
+    --spacing-lg: 48px;
     --spacing-xl: 60px;
     
     /* Border radius */
-    --radius-sm: 3px;
-    --radius-md: 5px;
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-xl: 20px;
     
     /* Transitions */
-    --transition-fast: 0.2s;
+    --transition-fast: 0.15s;
     --transition-normal: 0.3s;
     
     /* Z-index scale */
     --z-dropdown: 200;
     --z-modal: 1000;
     
-    /* Pine Forest Theme Colors - Light Mode */
-    --background-color: #F5F7F3; /* Light pine needle mist */
-    --heading-color: #1A3025; /* Deep forest green */
-    --text-color: #0F2018; /* Dark pine shadow */
-    --link-color: #2D5016; /* Forest moss */
-    --visited-color: #1E3A11; /* Deep woodland */
-    --main-color: #4A7C59; /* Pine needle green */
-    --code-background-color: #E8EDEA; /* Frosted pine */
-    --code-color: #1A3025; /* Deep forest green */
-    --blockquote-color: #7A9B85; /* Sage green */
+    /* Premium Modern Theme Colors - Light Mode */
+    --background-color: #f8fafc; /* Crisp light gray/blue */
+    --surface-color: #ffffff; /* pure white surface */
+    --surface-glass: rgba(255, 255, 255, 0.7);
+    --heading-color: #0f172a; /* Deep slate */
+    --text-color: #334155; /* Neutral slate */
+    --link-color: #3b82f6; /* Modern bright blue */
+    --visited-color: #2563eb; 
+    --main-color: #2563eb; 
+    --code-background-color: #f1f5f9; 
+    --code-color: #0f172a; 
+    --blockquote-color: #64748b; 
+    --gradient-brand: linear-gradient(135deg, #3b82f6, #8b5cf6);
     
     /* Interactive colors derived from theme */
     --hover-color: white;
-    --border-color: var(--blockquote-color);
-    --shadow-color: rgba(0, 0, 0, 0.18);
+    --border-color: #e2e8f0;
+    --shadow-color: rgba(15, 23, 42, 0.08);
+    --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
     
     /* Glow effects for interactive elements */
-    --glow-color-light: rgba(45, 80, 22, 0.3);
-    --glow-color-medium: rgba(45, 80, 22, 0.5);
+    --glow-color-light: rgba(59, 130, 246, 0.3);
+    --glow-color-medium: rgba(59, 130, 246, 0.5);
 }
 
 /* Dark Mode Color Overrides */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #0D1B12; /* Dark pine shadow */
-        --heading-color: #C8D8CE; /* Light pine mist */
-        --text-color: #E0EADE; /* Pale forest light */
-        --link-color: #7AB069; /* Bright moss green */
-        --visited-color: #9BC490; /* Light woodland */
-        --main-color: #8BB899; /* Soft pine green */
-        --code-background-color: #1A2B1F; /* Dark evergreen */
-        --code-color: #C8D8CE; /* Light pine mist */
-        --blockquote-color: #4A6B52; /* Forest undergrowth */
+        --background-color: #0b1121; /* Very dark blue slate */
+        --surface-color: #172136; /* Dark surface */
+        --surface-glass: rgba(11, 17, 33, 0.7);
+        --heading-color: #f8fafc; /* Crisp white */
+        --text-color: #cbd5e1; /* Pale slate */
+        --link-color: #60a5fa; /* Light pastel blue */
+        --visited-color: #93c5fd; 
+        --main-color: #60a5fa; 
+        --code-background-color: #1e293b; 
+        --code-color: #f1f5f9; 
+        --blockquote-color: #64748b; 
+        --gradient-brand: linear-gradient(135deg, #60a5fa, #a78bfa);
         
         /* Dark mode glow effects */
-        --glow-color-light: rgba(122, 176, 105, 0.3);
-        --glow-color-medium: rgba(122, 176, 105, 0.5);
+        --border-color: #334155;
+        --shadow-color: rgba(0, 0, 0, 0.5);
+        --glow-color-light: rgba(96, 165, 250, 0.3);
+        --glow-color-medium: rgba(96, 165, 250, 0.5);
     }
 }
 
@@ -94,8 +104,9 @@ body {
     background-color: var(--background-color);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    line-height: 1.5;
+    line-height: 1.7;
     color: var(--text-color);
+    transition: background-color var(--transition-normal) ease, color var(--transition-normal) ease;
 }
 
 /* =============================================================================
@@ -117,17 +128,18 @@ strong, b {
 
 a {
     color: var(--link-color);
-    font-family: var(--font-main);
+    font-family: var(--font-secondary);
+    font-weight: 500;
     cursor: pointer;
     text-decoration: none;
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 2px solid transparent;
     transition: all var(--transition-fast) ease;
 }
 
 a:hover {
-    background-color: var(--main-color);
-    color: var(--hover-color);
+    color: var(--main-color);
     text-decoration: none;
+    border-bottom: 2px solid var(--main-color);
 }
 
 a:visited {
@@ -136,8 +148,9 @@ a:visited {
 
 /* External link marker */
 a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
-    content: "↗";
-    font-family: var(--font-monospace);
+    content: " ↗";
+    font-size: 0.8em;
+    opacity: 0.6;
 }
 
 .title:hover {
@@ -155,11 +168,44 @@ a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
 header {
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-md);
-    border-bottom: 3px dotted var(--main-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h2.title {
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: var(--spacing-sm);
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+header nav {
+    margin-top: var(--spacing-md);
 }
 
 nav a {
+    display: inline-block;
+    padding: 6px 16px;
     margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: var(--surface-color);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border-color);
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--text-color);
+    box-shadow: var(--shadow-color) 0px 2px 4px;
+    transition: all var(--transition-normal) ease;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+    background-color: var(--main-color);
+    color: #ffffff;
+    border-color: var(--main-color);
+    box-shadow: var(--glow-color-medium) 0px 4px 12px;
 }
 
 main {
@@ -183,18 +229,25 @@ footer > span:has(a[href="https://bearblog.dev"]) {
 
 hr {
     border: 0;
-    border-top: 1px dashed var(--border-color);
+    height: 1px;
+    background: var(--border-color);
+    margin: var(--spacing-lg) 0;
 }
 
 img {
     max-width: 100%;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
 }
 
 blockquote {
-    border-left: 1px solid var(--blockquote-color);
-    color: var(--code-color);
-    padding-left: var(--spacing-md);
+    border-left: 4px solid var(--main-color);
+    background-color: var(--code-background-color);
+    color: var(--text-color);
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
     font-style: italic;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
 /* =============================================================================
@@ -203,21 +256,23 @@ blockquote {
 
 code {
     font-family: var(--font-monospace);
-    padding: 2px;
+    padding: 0.2em 0.4em;
     background-color: var(--code-background-color);
     color: var(--code-color);
     border-radius: var(--radius-sm);
+    font-size: 0.9em;
 }
 
 .highlight,
 .code {
-    padding: 1px 15px;
+    padding: var(--spacing-md);
     background-color: var(--code-background-color);
     color: var(--code-color);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
     margin-block-start: 1em;
     margin-block-end: 1em;
     overflow-x: auto;
+    box-shadow: inset 0 0 0 1px var(--border-color);
 }
 
 /* =============================================================================
