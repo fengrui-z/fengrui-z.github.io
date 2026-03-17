@@ -5,7 +5,7 @@
    FONTS & IMPORTS
    ============================================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Fira+Code:wght@300..700&display=swap');
 
 /* =============================================================================
    CSS CUSTOM PROPERTIES (VARIABLES)
@@ -16,77 +16,67 @@
     --width: 720px;
     
     /* Typography */
-    --font-main: 'Outfit', sans-serif;
-    --font-secondary: 'Inter', sans-serif;
+    --font-main: 'Lora', serif;
+    --font-secondary: 'Lora', serif;
     --font-monospace: 'Fira Code', monospace;
-    --font-scale: 1em;
+    --font-scale: 1.1em;
     
     /* Spacing */
-    --spacing-xs: 8px;
-    --spacing-sm: 12px;
-    --spacing-md: 24px;
-    --spacing-lg: 48px;
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 20px;
+    --spacing-lg: 40px;
     --spacing-xl: 60px;
     
-    /* Border radius */
-    --radius-sm: 6px;
-    --radius-md: 12px;
-    --radius-xl: 20px;
+    /* Border radius - Academic Strict */
+    --radius-sm: 0px;
+    --radius-md: 2px;
+    --radius-xl: 4px;
     
     /* Transitions */
-    --transition-fast: 0.15s;
-    --transition-normal: 0.3s;
+    --transition-fast: 0.1s;
+    --transition-normal: 0.2s;
     
     /* Z-index scale */
     --z-dropdown: 200;
     --z-modal: 1000;
     
-    /* Premium Modern Theme Colors - Light Mode */
-    --background-color: #f8fafc; /* Crisp light gray/blue */
-    --surface-color: #ffffff; /* pure white surface */
-    --surface-glass: rgba(255, 255, 255, 0.7);
-    --heading-color: #0f172a; /* Deep slate */
-    --text-color: #334155; /* Neutral slate */
-    --link-color: #3b82f6; /* Modern bright blue */
-    --visited-color: #2563eb; 
-    --main-color: #2563eb; 
-    --code-background-color: #f1f5f9; 
-    --code-color: #0f172a; 
-    --blockquote-color: #64748b; 
-    --gradient-brand: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    /* Academic Theme Colors - Light Mode */
+    --background-color: #ffffff; /* Pure white */
+    --surface-color: #fcfcfc; /* Off-white surface */
+    --heading-color: #111111; /* Almost black */
+    --text-color: #222222; /* High contrast dark gray */
+    --link-color: #0056b3; /* Classic academic blue */
+    --visited-color: #4a235a; /* Classic purple */
+    --main-color: #0056b3; 
+    --code-background-color: #f4f4f4; /* Light gray for code */
+    --code-color: #111111; 
+    --blockquote-color: #555555; 
     
-    /* Interactive colors derived from theme */
-    --hover-color: white;
-    --border-color: #e2e8f0;
-    --shadow-color: rgba(15, 23, 42, 0.08);
-    --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
-    
-    /* Glow effects for interactive elements */
-    --glow-color-light: rgba(59, 130, 246, 0.3);
-    --glow-color-medium: rgba(59, 130, 246, 0.5);
+    /* Simple borders and no shadows */
+    --hover-color: #ffffff;
+    --border-color: #dddddd;
+    --shadow-color: transparent;
+    --shadow-lg: none;
 }
 
 /* Dark Mode Color Overrides */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #0b1121; /* Very dark blue slate */
-        --surface-color: #172136; /* Dark surface */
-        --surface-glass: rgba(11, 17, 33, 0.7);
-        --heading-color: #f8fafc; /* Crisp white */
-        --text-color: #cbd5e1; /* Pale slate */
-        --link-color: #60a5fa; /* Light pastel blue */
-        --visited-color: #93c5fd; 
-        --main-color: #60a5fa; 
-        --code-background-color: #1e293b; 
-        --code-color: #f1f5f9; 
-        --blockquote-color: #64748b; 
-        --gradient-brand: linear-gradient(135deg, #60a5fa, #a78bfa);
+        --background-color: #121212; /* Deep dark */
+        --surface-color: #1e1e1e; /* Dark surface */
+        --heading-color: #ffffff; /* Pure white */
+        --text-color: #e0e0e0; /* Off-white */
+        --link-color: #66b2ff; /* Light blue */
+        --visited-color: #cda4de; /* Light purple */
+        --main-color: #66b2ff; 
+        --code-background-color: #2a2a2a; 
+        --code-color: #e0e0e0; 
+        --blockquote-color: #a0a0a0; 
         
-        /* Dark mode glow effects */
-        --border-color: #334155;
-        --shadow-color: rgba(0, 0, 0, 0.5);
-        --glow-color-light: rgba(96, 165, 250, 0.3);
-        --glow-color-medium: rgba(96, 165, 250, 0.5);
+        /* Dark mode overrides */
+        --border-color: #333333;
+        --shadow-color: transparent;
     }
 }
 
@@ -129,17 +119,23 @@ strong, b {
 a {
     color: var(--link-color);
     font-family: var(--font-secondary);
-    font-weight: 500;
+    font-weight: 400;
     cursor: pointer;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 86, 179, 0.3); /* Subtle underline */
+    text-underline-offset: 4px;
     transition: all var(--transition-fast) ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        text-decoration-color: rgba(102, 178, 255, 0.3);
+    }
 }
 
 a:hover {
     color: var(--main-color);
-    text-decoration: none;
-    border-bottom: 2px solid var(--main-color);
+    text-decoration-color: var(--main-color);
 }
 
 a:visited {
@@ -149,8 +145,8 @@ a:visited {
 /* External link marker */
 a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
     content: " ↗";
-    font-size: 0.8em;
-    opacity: 0.6;
+    font-size: 0.7em;
+    opacity: 0.5;
 }
 
 .title:hover {
@@ -168,44 +164,34 @@ a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
 header {
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-md);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--heading-color);
 }
 
 header h2.title {
-    font-size: 2.2em;
-    font-weight: 800;
+    font-size: 2em;
+    font-weight: 600;
     margin-bottom: var(--spacing-sm);
-    background: var(--gradient-brand);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--heading-color);
     display: inline-block;
 }
 
 header nav {
-    margin-top: var(--spacing-md);
+    margin-top: var(--spacing-sm);
 }
 
 nav a {
     display: inline-block;
-    padding: 6px 16px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    background-color: var(--surface-color);
-    border-radius: var(--radius-xl);
-    border: 1px solid var(--border-color);
-    font-size: 0.9em;
-    font-weight: 600;
+    margin-right: 16px;
+    font-size: 1.05em;
     color: var(--text-color);
-    box-shadow: var(--shadow-color) 0px 2px 4px;
-    transition: all var(--transition-normal) ease;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 nav a:hover {
-    transform: translateY(-2px);
-    background-color: var(--main-color);
-    color: #ffffff;
-    border-color: var(--main-color);
-    box-shadow: var(--glow-color-medium) 0px 4px 12px;
+    color: var(--link-color);
+    text-decoration: underline;
+    text-decoration-color: var(--link-color);
 }
 
 main {
@@ -236,18 +222,15 @@ hr {
 
 img {
     max-width: 100%;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
 }
 
 blockquote {
-    border-left: 4px solid var(--main-color);
-    background-color: var(--code-background-color);
-    color: var(--text-color);
-    padding: var(--spacing-md);
+    border-left: 3px solid var(--border-color);
+    color: var(--blockquote-color);
+    padding: var(--spacing-sm) var(--spacing-md);
     margin: var(--spacing-md) 0;
     font-style: italic;
-    border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
 /* =============================================================================
@@ -259,7 +242,6 @@ code {
     padding: 0.2em 0.4em;
     background-color: var(--code-background-color);
     color: var(--code-color);
-    border-radius: var(--radius-sm);
     font-size: 0.9em;
 }
 
@@ -268,11 +250,10 @@ code {
     padding: var(--spacing-md);
     background-color: var(--code-background-color);
     color: var(--code-color);
-    border-radius: var(--radius-md);
     margin-block-start: 1em;
     margin-block-end: 1em;
     overflow-x: auto;
-    box-shadow: inset 0 0 0 1px var(--border-color);
+    border: 1px solid var(--border-color);
 }
 
 /* =============================================================================
