@@ -1,16 +1,33 @@
 <footer class="bottom-footer">
-    <!-- <span class="mini-note">You've reached the end of the page. Good job!</span> -->
-    <!-- <nav class="sans">
-        <hr>
-        <p><label class="menu-icon" for="menu-btn">Menu</label></p>
-        <ul class="site-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/designs">Designs</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="https://canisee.xyz" title="Confirm your vision functionality">[Can I See]</a></li>
-        </ul>
-    </nav> -->
-    <i><a href="https://knhash.in/jekyllBear" title="the art">jekyllBear</a> by <a href="https://knhash.in" title="the artist">knhash</a></i>
+    <!-- Clean academic footer layout -->
 </footer>
 
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const iconMoon = document.getElementById('theme-icon-moon');
+    const iconSun = document.getElementById('theme-icon-sun');
+    
+    // Check local storage or default to system preference
+    const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    
+    // Set initial theme
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateIcons(currentTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+        const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        updateIcons(theme);
+    });
+    
+    function updateIcons(theme) {
+        if (theme === 'dark') {
+            iconMoon.style.display = 'none';
+            iconSun.style.display = 'block';
+        } else {
+            iconMoon.style.display = 'block';
+            iconSun.style.display = 'none';
+        }
+    }
+</script>

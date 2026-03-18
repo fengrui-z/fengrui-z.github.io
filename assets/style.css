@@ -60,9 +60,26 @@
     --shadow-lg: none;
 }
 
-/* Dark Mode Color Overrides */
+/* Dark Mode Color Overrides (System + Manual Toggle) */
+[data-theme="dark"] {
+    --background-color: #121212; /* Deep dark */
+    --surface-color: #1e1e1e; /* Dark surface */
+    --heading-color: #ffffff; /* Pure white */
+    --text-color: #e0e0e0; /* Off-white */
+    --link-color: #66b2ff; /* Light blue */
+    --visited-color: #cda4de; /* Light purple */
+    --main-color: #66b2ff; 
+    --code-background-color: #2a2a2a; 
+    --code-color: #e0e0e0; 
+    --blockquote-color: #a0a0a0; 
+    
+    /* Dark mode overrides */
+    --border-color: #333333;
+    --shadow-color: transparent;
+}
+
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not([data-theme="light"]) {
         --background-color: #121212; /* Deep dark */
         --surface-color: #1e1e1e; /* Dark surface */
         --heading-color: #ffffff; /* Pure white */
@@ -127,8 +144,12 @@ a {
     transition: all var(--transition-fast) ease;
 }
 
+[data-theme="dark"] a {
+    text-decoration-color: rgba(102, 178, 255, 0.3);
+}
+
 @media (prefers-color-scheme: dark) {
-    a {
+    :root:not([data-theme="light"]) a {
         text-decoration-color: rgba(102, 178, 255, 0.3);
     }
 }
@@ -161,10 +182,43 @@ a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
    LAYOUT COMPONENTS
    ============================================================================= */
 
-header {
+header.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-md);
     border-bottom: 1px solid var(--heading-color);
+}
+
+.header-main {
+    flex: 1;
+}
+
+.header-icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-bottom: 4px; /* align visually with text baseline */
+}
+
+.header-icons a,
+.header-icons button {
+    color: var(--text-color);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--transition-normal) ease, transform var(--transition-fast) ease;
+}
+
+.header-icons a:hover,
+.header-icons button:hover {
+    color: var(--link-color);
+    transform: scale(1.1);
 }
 
 header h2.title {
