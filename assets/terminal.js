@@ -102,14 +102,6 @@ class TerminalSimulator {
     render() {
         this.container.innerHTML = `
             <div class="terminal-window">
-                <div class="terminal-titlebar">
-                    <div class="terminal-buttons">
-                        <button class="terminal-btn close"></button>
-                        <button class="terminal-btn minimize"></button>
-                        <button class="terminal-btn maximize"></button>
-                    </div>
-                    <div class="terminal-title">fengrui@homepage ~ /dev/tty1</div>
-                </div>
                 <div class="terminal-body" id="terminal-output">
                 </div>
                 <div class="terminal-input-line">
