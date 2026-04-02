@@ -346,7 +346,7 @@ Try '<span class="highlight">neofetch</span>' for a fun system info display.
         return `
 <span class="info">Contact Information:</span>
 
-<span class="success">Email:</span>    fengrui [at] nju [dot] edu [dot] cn
+<span class="success">Email:</span>    fengrui-z [at] smail [dot] nju [dot] edu [dot] cn
 <span class="success">GitHub:</span>   <a href="https://github.com/fengrui-z" target="_blank">https://github.com/fengrui-z ↗</a>
 <span class="success">Scholar:</span>  <a href="https://scholar.google.com/citations?user=qv13JgoAAAAJ" target="_blank">Google Scholar ↗</a>
 
