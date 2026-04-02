@@ -4,12 +4,15 @@ layout: compress
 
 {% include head.html %}
 
+<!-- Add class to existing body -->
+<script>document.body.classList.add('home-layout');</script>
+
 <!-- Terminal-specific styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/terminal.css">
 
 <style>
 /* Homepage-specific overrides - pure command line */
-body {
+body.home-layout {
     max-width: 800px;
     padding: 40px 20px;
     min-height: 100vh;
@@ -47,8 +50,6 @@ body {
     opacity: 0.7;
 }
 </style>
-
-<body class="home-layout">
 
     <!-- Terminal Container -->
     <div id="terminal-container"></div>
