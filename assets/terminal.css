@@ -88,7 +88,7 @@
     border-radius: 4px;
 }
 
-/* Terminal Output */
+/* Terminal Output - override any inherited styles */
 .terminal-output {
     margin-bottom: 4px;
     color: var(--terminal-text);
@@ -100,26 +100,49 @@
     color: var(--terminal-green);
     line-height: 1.2;
     margin: 8px 0;
+    background: none;
+    padding: 0;
+    border: none;
 }
 
 .terminal-output .highlight {
     color: var(--terminal-cyan);
+    background: none;
+    padding: 0;
+    border: none;
 }
 
 .terminal-output .warning {
     color: var(--terminal-yellow);
+    background: none;
+    padding: 0;
+    border: none;
 }
 
 .terminal-output .error {
     color: var(--terminal-red);
+    background: none;
+    padding: 0;
+    border: none;
 }
 
 .terminal-output .success {
     color: var(--terminal-green);
+    background: none;
+    padding: 0;
+    border: none;
 }
 
 .terminal-output .info {
     color: var(--terminal-purple);
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+.terminal-output code {
+    background: none;
+    padding: 0;
 }
 
 /* Terminal Input */
@@ -190,13 +213,15 @@
     animation: blink 1s step-end infinite;
 }
 
-/* Command List */
+/* Command List - no backgrounds */
 .command-list {
     margin: 12px 0;
 }
 
 .command-item {
     padding: 4px 0;
+    background: none;
+    border: none;
 }
 
 .command-name {
@@ -204,11 +229,15 @@
     font-weight: 600;
     display: inline-block;
     min-width: 100px;
+    background: none;
+    padding: 0;
 }
 
 .command-desc {
     color: var(--terminal-text);
     opacity: 0.8;
+    background: none;
+    padding: 0;
 }
 
 /* Matrix Rain Background (optional) */
@@ -226,6 +255,8 @@
 /* Profile Section - no avatar box */
 .terminal-profile {
     margin: 16px 0;
+    background: none;
+    border: none;
 }
 
 .terminal-info .name {
@@ -233,22 +264,30 @@
     font-weight: 600;
     color: var(--terminal-green);
     margin-bottom: 4px;
+    background: none;
+    padding: 0;
 }
 
 .terminal-info .title {
     color: var(--terminal-cyan);
     margin-bottom: 8px;
+    background: none;
+    padding: 0;
 }
 
 .terminal-info .links {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    background: none;
+    padding: 0;
 }
 
 .terminal-info .links a {
     color: var(--terminal-purple);
     text-decoration: none;
+    background: none;
+    padding: 0;
 }
 
 .terminal-info .links a:hover {
@@ -258,35 +297,50 @@
 /* Timeline/Updates - no borders */
 .terminal-timeline {
     margin: 16px 0;
+    background: none;
+    padding: 0;
 }
 
 .timeline-item {
     padding: 6px 0;
+    background: none;
+    border: none;
 }
 
 .timeline-date {
     color: var(--terminal-yellow);
     font-weight: 600;
+    background: none;
+    padding: 0;
 }
 
 .timeline-content {
     color: var(--terminal-text);
+    background: none;
+    padding: 0;
 }
 
 /* Skills/Tags - no blocks, just colors */
 .skill-tag {
     color: var(--terminal-cyan);
     margin: 0 4px;
+    background: none;
+    padding: 0;
+    border: none;
 }
 
 /* Projects - no cards */
 .projects-grid {
     margin: 12px 0;
+    background: none;
+    padding: 0;
 }
 
 .project-name {
     color: var(--terminal-green);
     font-weight: 600;
+    background: none;
+    padding: 0;
 }
 
 .project-desc {
@@ -294,6 +348,8 @@
     opacity: 0.8;
     font-size: 13px;
     margin-top: 4px;
+    background: none;
+    padding: 0;
 }
 
 /* Welcome Animation */
