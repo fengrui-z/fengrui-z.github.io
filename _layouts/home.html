@@ -2,54 +2,23 @@
 layout: compress
 ---
 
-{% include head.html %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ site.baseurl }}/assets/favicon.ico" type="image/x-icon">
+    <link href='{{ site.baseurl }}/feed.xml' rel='alternate' type='application/atom+xml'>
+    <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/terminal.css">
+</head>
 
-<!-- Add class to existing body -->
-<script>document.body.classList.add('home-layout');</script>
-
-<!-- Terminal-specific styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/terminal.css">
-
-<style>
-/* Homepage-specific overrides - pure command line */
-body.home-layout {
-    max-width: 800px;
-    padding: 40px 20px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Hide header completely */
-.home-layout .site-header {
-    display: none;
-}
-
-/* Hide footer */
-.home-layout .bottom-footer {
-    display: none;
-}
-
-/* Terminal container fills most of page */
-#terminal-container {
-    flex: 1;
-}
-
-/* Minimal footer */
-.home-layout .terminal-footer {
-    margin-top: 30px;
-    text-align: center;
-    font-family: var(--font-monospace);
-    color: var(--text-color);
-    opacity: 0.5;
-    font-size: 12px;
-}
-
-.home-layout .terminal-footer a {
-    color: var(--text-color);
-    opacity: 0.7;
-}
-</style>
+<body class="home-layout">
 
     <!-- Terminal Container -->
     <div id="terminal-container"></div>
@@ -62,7 +31,16 @@ body.home-layout {
         <a href="https://scholar.google.com/citations?user=qv13JgoAAAAJ">scholar</a>
     </div>
 
-    {% include footer.html %}
+    <!-- Theme Toggle Script -->
+    <script>
+        // Theme handling
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
 
     <!-- Terminal Script -->
     <script src="{{ site.baseurl }}/assets/terminal.js"></script>
