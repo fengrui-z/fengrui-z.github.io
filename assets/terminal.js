@@ -250,44 +250,36 @@ Try '<span class="highlight">neofetch</span>' for a fun system info display.
 
     showHelp() {
         return `
-<div class="command-list">
 <span class="info">Available Commands:</span>
 
-<span class="command-item"><span class="command-name">about</span><span class="command-desc">About me & my background</span></span>
-<span class="command-item"><span class="command-name">updates</span><span class="command-desc">Latest updates & news</span></span>
-<span class="command-item"><span class="command-name">projects</span><span class="command-desc">My projects & research</span></span>
-<span class="command-item"><span class="command-name">skills</span><span class="command-desc">Technical skills & expertise</span></span>
-<span class="command-item"><span class="command-name">contact</span><span class="command-desc">How to reach me</span></span>
-<span class="command-item"><span class="command-name">links</span><span class="command-desc">Useful links & resources</span></span>
+<span class="command-item"><span class="command-name">about</span>    About me & my background</span>
+<span class="command-item"><span class="command-name">updates</span>  Latest updates & news</span>
+<span class="command-item"><span class="command-name">projects</span> My projects & research</span>
+<span class="command-item"><span class="command-name">skills</span>   Technical skills & expertise</span>
+<span class="command-item"><span class="command-name">contact</span>  How to reach me</span>
+<span class="command-item"><span class="command-name">links</span>    Useful links & resources</span>
 
-<span class="command-item"><span class="command-name">neofetch</span><span class="command-desc">System info (fun display)</span></span>
-<span class="command-item"><span class="command-name">date</span><span class="command-desc">Current date & time</span></span>
-<span class="command-item"><span class="command-name">whoami</span><span class="command-desc">Who am I?</span></span>
-<span class="command-item"><span class="command-name">ls</span><span class="command-desc">List sections</span></span>
-<span class="command-item"><span class="command-name">cat [file]</span><span class="command-desc">Read a file (try cat about)</span></span>
+<span class="command-item"><span class="command-name">neofetch</span> System info (fun display)</span>
+<span class="command-item"><span class="command-name">date</span>     Current date & time</span>
+<span class="command-item"><span class="command-name">whoami</span>   Who am I?</span>
+<span class="command-item"><span class="command-name">ls</span>       List sections</span>
+<span class="command-item"><span class="command-name">cat</span>      Read a file (try cat about)</span>
 
-<span class="command-item"><span class="command-name">clear</span><span class="command-desc">Clear terminal screen</span></span>
-<span class="command-item"><span class="command-name">theme</span><span class="command-desc">Toggle dark/light theme</span></span>
-<span class="command-item"><span class="command-name">matrix</span><span class="command-desc">Toggle matrix background</span></span>
-<span class="command-item"><span class="command-name">repo</span><span class="command-desc">View this site's source code</span></span>
+<span class="command-item"><span class="command-name">clear</span>    Clear terminal screen</span>
+<span class="command-item"><span class="command-name">theme</span>    Toggle dark/light theme</span>
+<span class="command-item"><span class="command-name">matrix</span>   Toggle matrix background</span>
+<span class="command-item"><span class="command-name">repo</span>     View this site's source code</span>
 
-<span class="warning">[Easter Eggs]</span> Try: <span class="highlight">sudo</span>, <span class="highlight">coffee</span>, <span class="highlight">hack</span>
-</div>`;
+<span class="warning">[Easter Eggs]</span> Try: <span class="highlight">sudo</span>, <span class="highlight">coffee</span>, <span class="highlight">hack</span>`;
     }
 
     showAbout() {
         return `
-<div class="terminal-profile">
-<div class="terminal-avatar">🧑‍💻</div>
-<div class="terminal-info">
-<div class="name">Fengrui Zhang (张峰瑞)</div>
-<div class="title">First-year CS Ph.D. Student @ Nanjing University</div>
-<div class="links">
-<a href="https://github.com/fengrui-z" target="_blank">GitHub ↗</a>
-<a href="https://scholar.google.com/citations?user=qv13JgoAAAAJ" target="_blank">Scholar ↗</a>
-</div>
-</div>
-</div>
+<span class="name">Fengrui Zhang (张峰瑞)</span>
+<span class="title">First-year CS Ph.D. Student @ Nanjing University</span>
+<span class="links">
+<a href="https://github.com/fengrui-z" target="_blank">GitHub ↗</a>  <a href="https://scholar.google.com/citations?user=qv13JgoAAAAJ" target="_blank">Scholar ↗</a>
+</span>
 
 <span class="info">Background:</span>
 • First-year Computer Science Ph.D. Student at <span class="highlight">LANDS Lab</span>
@@ -325,16 +317,11 @@ Try '<span class="highlight">neofetch</span>' for a fun system info display.
         return `
 <span class="info">Projects & Research:</span>
 
-<div class="projects-grid">
-<div class="project-card">
-<span class="project-name">Research @ LANDS</span>
+<span class="success">[Research]</span> <span class="project-name">@ LANDS Lab</span>
 <span class="project-desc">Distributed systems & network architecture research under Prof. Xiaoliang Wang</span>
-</div>
-<div class="project-card">
-<span class="project-name">Internship @ Tongyi Lab</span>
-<span class="project-desc">Working on LLM-related systems at Alibaba's Tongyi Lab (2026)</span>
-</div>
-</div>
+
+<span class="success">[Internship]</span> <span class="project-name">@ Tongyi Lab, Alibaba</span>
+<span class="project-desc">Working on LLM-related systems (2026)</span>
 
 <span class="warning">[More details coming soon...]</span>`;
     }
@@ -344,13 +331,13 @@ Try '<span class="highlight">neofetch</span>' for a fun system info display.
 <span class="info">Technical Skills:</span>
 
 <span class="success">Languages:</span>
-<span class="skill-tag">Python</span><span class="skill-tag">C/C++</span><span class="skill-tag">Go</span><span class="skill-tag">Java</span><span class="skill-tag">Rust</span><span class="skill-tag">Bash</span>
+<span class="skill-tag">Python</span> <span class="skill-tag">C/C++</span> <span class="skill-tag">Go</span> <span class="skill-tag">Java</span> <span class="skill-tag">Rust</span> <span class="skill-tag">Bash</span>
 
 <span class="success">Systems & Tools:</span>
-<span class="skill-tag">Linux</span><span class="skill-tag">Docker</span><span class="skill-tag">Git</span><span class="skill-tag">Kubernetes</span><span class="skill-tag">MySQL</span><span class="skill-tag">Redis</span>
+<span class="skill-tag">Linux</span> <span class="skill-tag">Docker</span> <span class="skill-tag">Git</span> <span class="skill-tag">Kubernetes</span> <span class="skill-tag">MySQL</span> <span class="skill-tag">Redis</span>
 
 <span class="success">Research Areas:</span>
-<span class="skill-tag">Distributed Systems</span><span class="skill-tag">Network Architecture</span><span class="skill-tag">LLM Systems</span>
+<span class="skill-tag">Distributed Systems</span> <span class="skill-tag">Network Architecture</span> <span class="skill-tag">LLM Systems</span>
 
 <span class="warning">[Always learning new things...]</span>`;
     }
