@@ -49,11 +49,7 @@ permalink: /blog/:slug
 timezone: Asia/China
 future: false
 
-exclude:
-- README.md
-- LICENSE.md
-
-exclude: [vendor]
+exclude: [vendor, README.md, LICENSE.md, _archive]
 
 Blog: /blog
 
