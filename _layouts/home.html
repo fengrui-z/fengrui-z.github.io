@@ -1,71 +1,47 @@
 ---
----
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ site.baseurl }}/assets/favicon.ico" type="image/x-icon">
+    <link href='{{ site.baseurl }}/feed.xml' rel='alternate' type='application/atom+xml'>
     <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
-    <style>
-        .home-page {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .home-name {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #111;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.02em;
-        }
-
-        .home-tagline {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 2rem;
-            font-weight: 400;
-        }
-
-        .home-links {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .home-links a {
-            color: #0066cc;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: color 0.15s ease;
-        }
-
-        .home-links a:hover {
-            color: #004499;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/terminal.css">
 </head>
+
 <body class="home-layout">
-    <main class="home-page">
-        <h1 class="home-name">Fengrui Zhang</h1>
-        <p class="home-tagline">First-year CS Ph.D. Student @ Nanjing University</p>
-        <nav class="home-links">
-            <a href="{{ site.url }}/blog">blog</a>
-            <a href="{{ site.url }}/life">life</a>
-            <a href="https://github.com/fengrui-z">github</a>
-            <a href="https://scholar.google.com/citations?user=qv13JgoAAAAJ">scholar</a>
-        </nav>
-    </main>
+
+    <!-- Terminal Container -->
+    <div id="terminal-container"></div>
+
+    <!-- Minimal Footer -->
+    <div class="terminal-footer">
+        <a href="{{ site.url }}/blog">blog</a> ·
+        <a href="{{ site.url }}/life">life</a> ·
+        <a href="https://github.com/fengrui-z">github</a> ·
+        <a href="https://scholar.google.com/citations?user=qv13JgoAAAAJ">scholar</a>
+    </div>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        // Theme handling
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+
+    <!-- Terminal Script -->
+    <script src="{{ site.baseurl }}/assets/terminal.js"></script>
+
 </body>
 </html>

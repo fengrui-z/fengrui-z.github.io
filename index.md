@@ -1,6 +1,10 @@
 ---
-layout: home
+layout: default
 title: Home
 ---
 
-<!-- Terminal will be rendered by JavaScript -->
+## Welcome
+
+Here is Fengrui Zhang (张峰瑞), a first year CS Ph.D Student at [Nanjing University](https://cs.nju.edu.cn/)
+
+Have a look around.
