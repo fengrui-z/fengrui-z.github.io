@@ -2,8 +2,8 @@
 # site.title
 
 title: Fengrui's Page
-description: Here is Fengrui Zhang (张峰瑞), a first year CS Ph.D Student at [Nanjing University](https://cs.nju.edu.cn/)
-# baseurl: "/jekyllBear" # the subpath of your site, e.g. /blog/
+description: Here is Fengrui Zhang (张峰瑞), a first year CS Ph.D Student at Nanjing University
+# baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://fengrui-z.github.io" # the base hostname & protocol for your site
 # host: 0.0.0.0
 
@@ -46,17 +46,23 @@ defaults:
 
 # baseurl: ""
 permalink: /blog/:slug
-timezone: Asia/China
+timezone: Asia/Shanghai
 future: false
 
-exclude: [vendor, README.md, LICENSE.md, _archive]
+exclude:
+- README.md
+- LICENSE.md
+
+exclude: [vendor]
 
 Blog: /blog
+Life: /life
 
 # Add general links to site pages here
 links:
   # Resume: /assets/resume.pdf
-  
+  GitHub: https://github.com/fengrui-z
+  Scholar: https://scholar.google.com/citations?user=qv13JgoAAAAJ
 
 # Add links for more focus here
 special_links:

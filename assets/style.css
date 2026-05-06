@@ -5,7 +5,7 @@
    FONTS & IMPORTS
    ============================================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* =============================================================================
    CSS CUSTOM PROPERTIES (VARIABLES)
@@ -16,84 +16,67 @@
     --width: 720px;
     
     /* Typography */
-    --font-main: 'Lora', serif;
-    --font-secondary: 'Lora', serif;
-    --font-monospace: 'Fira Code', monospace;
-    --font-scale: 1.1em;
+    --font-main: 'IBM Plex Mono', monospace;
+    --font-secondary: 'IBM Plex Mono', monospace;
+    --font-monospace: 'IBM Plex Mono', monospace;
+    --font-scale: 0.9em;
     
     /* Spacing */
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
     --spacing-md: 20px;
     --spacing-lg: 40px;
     --spacing-xl: 60px;
     
-    /* Border radius - Academic Strict */
-    --radius-sm: 0px;
-    --radius-md: 2px;
-    --radius-xl: 4px;
+    /* Border radius */
+    --radius-sm: 3px;
+    --radius-md: 5px;
     
     /* Transitions */
-    --transition-fast: 0.1s;
-    --transition-normal: 0.2s;
+    --transition-fast: 0.2s;
+    --transition-normal: 0.3s;
     
     /* Z-index scale */
     --z-dropdown: 200;
     --z-modal: 1000;
     
-    /* Academic Theme Colors - Light Mode */
-    --background-color: #ffffff; /* Pure white */
-    --surface-color: #fcfcfc; /* Off-white surface */
-    --heading-color: #111111; /* Almost black */
-    --text-color: #222222; /* High contrast dark gray */
-    --link-color: #0056b3; /* Classic academic blue */
-    --visited-color: #4a235a; /* Classic purple */
-    --main-color: #0056b3; 
-    --code-background-color: #f4f4f4; /* Light gray for code */
-    --code-color: #111111; 
-    --blockquote-color: #555555; 
+    /* Pine Forest Theme Colors - Light Mode */
+    --background-color: #F5F7F3; /* Light pine needle mist */
+    --heading-color: #1A3025; /* Deep forest green */
+    --text-color: #0F2018; /* Dark pine shadow */
+    --link-color: #2D5016; /* Forest moss */
+    --visited-color: #1E3A11; /* Deep woodland */
+    --main-color: #4A7C59; /* Pine needle green */
+    --code-background-color: #E8EDEA; /* Frosted pine */
+    --code-color: #1A3025; /* Deep forest green */
+    --blockquote-color: #7A9B85; /* Sage green */
     
-    /* Simple borders and no shadows */
-    --hover-color: #ffffff;
-    --border-color: #dddddd;
-    --shadow-color: transparent;
-    --shadow-lg: none;
+    /* Interactive colors derived from theme */
+    --hover-color: white;
+    --border-color: var(--blockquote-color);
+    --shadow-color: rgba(0, 0, 0, 0.18);
+    
+    /* Glow effects for interactive elements */
+    --glow-color-light: rgba(45, 80, 22, 0.3);
+    --glow-color-medium: rgba(45, 80, 22, 0.5);
 }
 
-/* Dark Mode Color Overrides (System + Manual Toggle) */
-[data-theme="dark"] {
-    --background-color: #121212; /* Deep dark */
-    --surface-color: #1e1e1e; /* Dark surface */
-    --heading-color: #ffffff; /* Pure white */
-    --text-color: #e0e0e0; /* Off-white */
-    --link-color: #66b2ff; /* Light blue */
-    --visited-color: #cda4de; /* Light purple */
-    --main-color: #66b2ff; 
-    --code-background-color: #2a2a2a; 
-    --code-color: #e0e0e0; 
-    --blockquote-color: #a0a0a0; 
-    
-    /* Dark mode overrides */
-    --border-color: #333333;
-    --shadow-color: transparent;
-}
-
+/* Dark Mode Color Overrides */
 @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-        --background-color: #121212; /* Deep dark */
-        --surface-color: #1e1e1e; /* Dark surface */
-        --heading-color: #ffffff; /* Pure white */
-        --text-color: #e0e0e0; /* Off-white */
-        --link-color: #66b2ff; /* Light blue */
-        --visited-color: #cda4de; /* Light purple */
-        --main-color: #66b2ff; 
-        --code-background-color: #2a2a2a; 
-        --code-color: #e0e0e0; 
-        --blockquote-color: #a0a0a0; 
+    :root {
+        --background-color: #0D1B12; /* Dark pine shadow */
+        --heading-color: #C8D8CE; /* Light pine mist */
+        --text-color: #E0EADE; /* Pale forest light */
+        --link-color: #7AB069; /* Bright moss green */
+        --visited-color: #9BC490; /* Light woodland */
+        --main-color: #8BB899; /* Soft pine green */
+        --code-background-color: #1A2B1F; /* Dark evergreen */
+        --code-color: #C8D8CE; /* Light pine mist */
+        --blockquote-color: #4A6B52; /* Forest undergrowth */
         
-        /* Dark mode overrides */
-        --border-color: #333333;
-        --shadow-color: transparent;
+        /* Dark mode glow effects */
+        --glow-color-light: rgba(122, 176, 105, 0.3);
+        --glow-color-medium: rgba(122, 176, 105, 0.5);
     }
 }
 
@@ -111,9 +94,8 @@ body {
     background-color: var(--background-color);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    line-height: 1.7;
+    line-height: 1.5;
     color: var(--text-color);
-    transition: background-color var(--transition-normal) ease, color var(--transition-normal) ease;
 }
 
 /* =============================================================================
@@ -135,28 +117,17 @@ strong, b {
 
 a {
     color: var(--link-color);
-    font-family: var(--font-secondary);
-    font-weight: 400;
+    font-family: var(--font-main);
     cursor: pointer;
-    text-decoration: underline;
-    text-decoration-color: rgba(0, 86, 179, 0.3); /* Subtle underline */
-    text-underline-offset: 4px;
+    text-decoration: none;
+    border-bottom: 3px solid var(--main-color);
     transition: all var(--transition-fast) ease;
 }
 
-[data-theme="dark"] a {
-    text-decoration-color: rgba(102, 178, 255, 0.3);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) a {
-        text-decoration-color: rgba(102, 178, 255, 0.3);
-    }
-}
-
 a:hover {
-    color: var(--main-color);
-    text-decoration-color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--hover-color);
+    text-decoration: none;
 }
 
 a:visited {
@@ -165,9 +136,8 @@ a:visited {
 
 /* External link marker */
 a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
-    content: " ↗";
-    font-size: 0.7em;
-    opacity: 0.5;
+    content: "↗";
+    font-family: var(--font-monospace);
 }
 
 .title:hover {
@@ -182,70 +152,14 @@ a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
    LAYOUT COMPONENTS
    ============================================================================= */
 
-header.site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+header {
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-md);
-    border-bottom: 1px solid var(--heading-color);
-}
-
-.header-main {
-    flex: 1;
-}
-
-.header-icons {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    padding-bottom: 4px; /* align visually with text baseline */
-}
-
-.header-icons a,
-.header-icons button {
-    color: var(--text-color);
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color var(--transition-normal) ease, transform var(--transition-fast) ease;
-}
-
-.header-icons a:hover,
-.header-icons button:hover {
-    color: var(--link-color);
-    transform: scale(1.1);
-}
-
-header h2.title {
-    font-size: 2em;
-    font-weight: 600;
-    margin-bottom: var(--spacing-sm);
-    color: var(--heading-color);
-    display: inline-block;
-}
-
-header nav {
-    margin-top: var(--spacing-sm);
+    border-bottom: 3px dotted var(--main-color);
 }
 
 nav a {
-    display: inline-block;
-    margin-right: 16px;
-    font-size: 1.05em;
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-nav a:hover {
-    color: var(--link-color);
-    text-decoration: underline;
-    text-decoration-color: var(--link-color);
+    margin-right: 8px;
 }
 
 main {
@@ -269,21 +183,17 @@ footer > span:has(a[href="https://bearblog.dev"]) {
 
 hr {
     border: 0;
-    height: 1px;
-    background: var(--border-color);
-    margin: var(--spacing-lg) 0;
+    border-top: 1px dashed var(--border-color);
 }
 
 img {
     max-width: 100%;
-    border: 1px solid var(--border-color);
 }
 
 blockquote {
-    border-left: 3px solid var(--border-color);
-    color: var(--blockquote-color);
-    padding: var(--spacing-sm) var(--spacing-md);
-    margin: var(--spacing-md) 0;
+    border-left: 1px solid var(--blockquote-color);
+    color: var(--code-color);
+    padding-left: var(--spacing-md);
     font-style: italic;
 }
 
@@ -293,21 +203,21 @@ blockquote {
 
 code {
     font-family: var(--font-monospace);
-    padding: 0.2em 0.4em;
+    padding: 2px;
     background-color: var(--code-background-color);
     color: var(--code-color);
-    font-size: 0.9em;
+    border-radius: var(--radius-sm);
 }
 
 .highlight,
 .code {
-    padding: var(--spacing-md);
+    padding: 1px 15px;
     background-color: var(--code-background-color);
     color: var(--code-color);
+    border-radius: var(--radius-sm);
     margin-block-start: 1em;
     margin-block-end: 1em;
     overflow-x: auto;
-    border: 1px solid var(--border-color);
 }
 
 /* =============================================================================
