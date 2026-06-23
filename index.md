@@ -15,9 +15,6 @@ My research interest falls on distributed system and efficient machine learning.
 
 <img src="/assets/images/tongyi_icon.png" alt="" style="height:1.2em; vertical-align:middle; margin-right:4px;"> 2026.2: Starting an Intern at Tongyi Lab, Alibaba Inc, working on [Data Juicer](https://github.com/datajuicer/data-juicer), [Data Juicer Agents](https://github.com/datajuicer/data-juicer-agents), [QwenPaw](https://github.com/agentscope-ai/QwenPaw) and etc...
 
-## Activity
-
-### GitHub Contributions
 <img src="https://ghchart.rshah.org/fengrui-z" alt="GitHub Contributions" style="max-width:100%;">
 
 <a href="https://info.flagcounter.com/KUlY" style="border: 2px solid var(--main-color); border-radius: var(--radius-sm); display: inline-block; padding: 8px; background: var(--background-color);">
