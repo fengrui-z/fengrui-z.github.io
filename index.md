@@ -15,7 +15,7 @@ Feel free to contact me through fengrui-z [at] smail [dot] nju [dot] edu [dot] c
 
 ## Updates
 
-<img src="/assets/images/tongyi_icon.png" alt="" style="height:1.2em; vertical-align:middle; margin-right:4px;"> 2026.2: Starting an Intern at Tongyi Lab, Alibaba Inc, working on [Data Juicer](https://github.com/datajuicer/data-juicer), [Data Juicer Agents](https://github.com/datajuicer/data-juicer-agents), [QwenPaw](https://github.com/agentscope-ai/QwenPaw) and etc...
+<img src="/assets/images/tongyi_icon.png" alt="" style="height:1.2em; vertical-align:middle; margin-right:4px;"> 2026.2: a Research Intern at Tongyi Lab, Alibaba Inc, working on [Data Juicer](https://github.com/datajuicer/data-juicer), [Data Juicer Agents](https://github.com/datajuicer/data-juicer-agents), [QwenPaw](https://github.com/agentscope-ai/QwenPaw) and etc...
 
 <div style="text-align: center;">
 <img src="https://ghchart.rshah.org/fengrui-z" alt="GitHub Contributions" style="max-width:100%;">
