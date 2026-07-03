@@ -20,13 +20,7 @@ Feel free to contact me through fengrui-z [at] smail [dot] nju [dot] edu [dot] c
 <div style="text-align: center;">
 <img src="https://ghchart.rshah.org/fengrui-z" alt="GitHub Contributions" style="max-width:100%;">
 
-<figure class="visitor-map">
-  <div class="visitor-map__header">
-    <span>Visitor map</span>
-    <span class="visitor-map__scope">IP-based locations</span>
-  </div>
-  <div class="visitor-map__widget">
-    <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=fNrmg41zAp7D7kT0SbcxKiVZ4EF_UuEvF-XcfnFu7-g&cl=ffffff&w=a"></script>
-  </div>
-</figure>
+<a href="https://info.flagcounter.com/KUlY" style="border: 2px solid var(--main-color); border-radius: var(--radius-sm); display: inline-block; padding: 8px; background: var(--background-color);">
+  <img src="https://s01.flagcounter.com/count/KUlY/bg_F5F7F3/txt_0F2018/border_4A7C59/columns_4/maxflags_24/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" style="display: block;">
+</a>
 </div>
