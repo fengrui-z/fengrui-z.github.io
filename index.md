@@ -28,6 +28,5 @@ Feel free to contact me through fengrui-z [at] smail [dot] nju [dot] edu [dot] c
   <div class="visitor-map__widget">
     <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=fNrmg41zAp7D7kT0SbcxKiVZ4EF_UuEvF-XcfnFu7-g&cl=ffffff&w=a"></script>
   </div>
-  <figcaption>Dots show approximate visitor locations based on IP.</figcaption>
 </figure>
 </div>

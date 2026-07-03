@@ -170,6 +170,7 @@ main {
 .visitor-map {
     margin: var(--spacing-md) auto 0;
     width: 100%;
+    max-width: 640px;
     text-align: left;
 }
 
@@ -235,13 +236,6 @@ main {
 
 .visitor-map__widget .mapmyvisitors-map-container {
     background-color: #315F48 !important;
-}
-
-.visitor-map figcaption {
-    margin-top: 6px;
-    color: var(--blockquote-color);
-    font-size: 0.75em;
-    text-align: right;
 }
 
 @media (prefers-color-scheme: dark) {
