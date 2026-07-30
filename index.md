@@ -11,6 +11,8 @@ Previously, I obtained M.S. in Data Science at Georgetown University and B.S. in
 
 My research interest falls on distributed system and efficient machine learning.
 
+In my spare time, I enjoy  badminton, 🏔️ trail running, and recently started learning 🎾 tennis.
+
 Feel free to contact me through fengrui-z [at] smail [dot] nju [dot] edu [dot] cn.
 
 ## Updates
