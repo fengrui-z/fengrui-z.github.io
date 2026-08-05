@@ -17,7 +17,7 @@ Feel free to contact me through fengrui-z [at] smail [dot] nju [dot] edu [dot] c
 
 ## Updates
 
-<img src="/assets/images/tongyi_icon.png" alt="" style="height:1.2em; vertical-align:middle; margin-right:4px;"> 2026.2: Start a Research Intern at Tongyi Lab, Alibaba Inc, working on Training Data Pipelines and Systems.
+<img src="/assets/images/tongyi_icon.png" alt="" style="height:1.2em; vertical-align:middle; margin-right:4px;"> 2026.2: Start a Research Intern at Tongyi Lab, Alibaba Inc, working on Distributed Training Data Pipelines and Systems.
 
 <div style="text-align: center;">
 <img src="https://ghchart.rshah.org/fengrui-z" alt="GitHub Contributions" style="max-width:100%;">
