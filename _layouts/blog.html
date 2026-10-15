@@ -22,7 +22,7 @@ layout: compress
         <li>
             <span>
                 <i>
-                    <time datetime="2022-01-28" pubdate="">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
                         {{ post.date | date: "%b %-d, %Y" }}
                     </time>
                 </i>

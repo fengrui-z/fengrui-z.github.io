@@ -12,8 +12,8 @@ layout: compress
 
     {% if site.tags[page.slug] %}
     <p>
-        Here be writings, tagged as <b>"{{ page.slug }}"</b>.<br>
-        <small><a href="{{ site.baseurl }}{{ site.Blog }}">Remove filter</a></small>
+        Projects tagged as <b>"{{ page.slug }}"</b>.<br>
+        <small><a href="{{ site.Projects | relative_url }}">Remove filter</a></small>
     </p>
 
     <ul class="blog-posts">
@@ -28,7 +28,7 @@ layout: compress
         <li>
             <span>
                 <i>
-                    <time datetime="2022-01-28" pubdate="">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
                         {{ post.date | date: "%b %-d, %Y" }}
                     </time>
                 </i>
@@ -42,7 +42,7 @@ layout: compress
     </ul>
     {% else %}
     <p>
-        There are no posts in {{ page.slug }}.
+        There are no projects in {{ page.slug }}.
     </p>
     {% endif %}
 
