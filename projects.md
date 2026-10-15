@@ -8,6 +8,4 @@ redirect_from:
   - /blog/
 ---
 
-# Projects
-
 Projects and notes on what I'm building.

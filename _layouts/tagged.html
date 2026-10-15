@@ -29,11 +29,13 @@ layout: compress
             <span>
                 <i>
                     <time datetime="{{ post.date | date_to_xmlschema }}">
-                        {{ post.date | date: "%b %-d, %Y" }}
+                        {{ post.date | date: "%b %Y" }}
                     </time>
                 </i>
             </span>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <div>
+                <a href="{{ post.url | relative_url }}">{{ post.project_name | default: post.title }}</a>{% if post.description %} — {{ post.description }}{% endif %}
+            </div>
         </li>
         {% endunless %}
         {% assign previous = post %}
